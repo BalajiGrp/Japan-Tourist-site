@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="">
+
+  <section class="top-nav sticky-top" id="top">
+    <div class="top container">
+      <div class="row">
+        <div class=" col-lg-6">
+          <p class="text-dark fw-bold m-0 text-muted">Japan Endless Discovery</p>
+        </div>
+        <div class=" col-lg-6 text-lg-end mb-1">
+          <div class="d-flex justify-content-end">
+            <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none px-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4361ee" class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" class="text-decoration-none px-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#d8572a" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="text-decoration-none px-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ef233c" class="bi bi-youtube"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--End Top-->
+
+    <nav class="navbar container-fluid navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div>
+          <img src="./pngwingcom (1).png" alt="logo" class="img-fluid">
+          <a class="navbar-brand fs-6 fw-bold mt-2" href="#">World of <span
+              class="text-danger fw-bold fs-3">Japan</span>
+          </a>
+
+          <a class="navbar-brand" href="#">
+
+          </a>
+        </div>
+
+        <!--Logo-->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link px-3 active fw-bold" aria-current="page" href="#">Destinations</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link px-3 fw-bold" href="#">Plan Your Trip</a>
+              </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-3 fw-bold" href="#">Art & Culture</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle px-3 fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About Japan
+              </a>
+              <ul class="dropdown-menu bg-danger">
+                <li><a class="dropdown-item" href="#">Nature & Outdoor</a></li>
+                <li><a class="dropdown-item" href="#">Food Culture</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Travelling to Japan</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 fw-bold" href="#faq">FAQ</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger rounded-pill" type="submit">Search</button>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!--End Navbar-->
+
+  <section class="">
+    <div class="">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#our-slider" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#our-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#our-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://www.thetimes.co.uk/travel/wp-content/uploads/sites/6/2022/01/USE_Pagoda-overlooking-Mount-Fuji-Japan_Credit_GettyImages-520571022.jpg?w=2200&h=880&crop=1"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>First slide label</p>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://yattatachi.com/wp-content/uploads/2018/09/Finding-Japan-Vancouver-Canada-Cover.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Second slide label</p>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./slider (1).webp " class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Third slide label</p>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--slider end-->
+
+
+  <section class="container-fluid py-5">
+    <div class="container">
+      <div class="row d-flex justify-content-center gap-2">
+        <div class="col-12 col-lg-6 card map-img mb-3">
+          <img class="img-fluid" src="./map.gif" alt="about">
+        </div>
+        <div class="col-12 col-lg-4 px-5">
+
+          <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card" style="width:18;">
+                  <img src="./Hokkaidu.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p>Hokkaido</p>
+                    <p class="card-text">Hokkaido northernmost of the four main islands of Japan.
+                      It is characterized by a cool climate and geologically recent mountains and volcanoes
+                      along a central north-south spine. Sapporo is the province’s industrial, commercial,
+                      and tourist centre.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card" style="width: 18;">
+                  <img src="./Tohoku.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4>Tohoku</h4>
+                    <p class="card-text"> Tohoku region made up of six prefectures: Aomori, Iwate, Miyagi, Akita,
+                      Yamagata, and Fukushima. The region is known for its volcanoes, mountains, and skiing.
+                      It also includes the Matsushima Bay islets and Lake Towada, a crater lake known for its
+                      bright blue color and surrounding forests.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card" style="width: 18;">
+                  <img src="./Kanto.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4>Kanto</h4>
+                    <p class="card-text">The Kantō region is a geographical region of Honshu, the largest island
+                      of Japan. In a common definition, the region includes the Greater Tokyo Area and encompasses
+                      seven prefectures: Gunma, Tochigi, Ibaraki, Saitama, Tokyo, Chiba, and Kanagawa.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card" style="width: 18;">
+                  <img src="./chubu.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4>Chubu</h4>
+                    <p class="card-text">The Chūbu region, also known as the Central region. The region is home to
+                      several major Japanese
+                      cities, including Nagoya and Nagano.It's also home to many mountainous areas, including Japan's
+                      tallest mountain, Mt. Fuji, and the Hida and Kiso mountain ranges.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card" style="width: 18;">
+                  <img src="./kensai.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4>Kansai</h4>
+                    <p class="card-text">Kansai, also known as Kinki, is one of the most popular tourism regions in
+                      Japan.
+                      With major cities like Osaka, Kyoto, Nara and Kobe contributing to the abundance of regional
+                      cuisine,
+                      culture and history, it’s apparent why Kansai is popular with the masses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card" style="width: 18;">
+                  <img src="./Chugoku.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4>Chugoku</h4>
+                    <p class="card-text">The Chugoku region is made up of the prefectures of Hiroshima, Okayama,
+                      Shimane,
+                      Tottori, and Yamaguchi.It's known for its natural beauty, historical significance, and rewarding
+                      hikes.
+                      Agriculture, Textile products, Iron and steel, Petro-chemistry, Lumber, Shipbuilding, Automotive
+                      industries,
+                      Agricultural machinery.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card" style="width: 18;">
+                  <img src="./shikoku.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4>Shikoku</h4>
+                    <p class="card-text">Shikoku is located in the southwestern part of the country.Some say you should
+                      spend at least a week on Shikoku to explore its natural and
+                      cultural attractions. Some recommend visiting in April to see the cherry blossoms, or in July,
+                      August,
+                      and September for summer activities and festivals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card" style="width: 18;">
+                  <img src="./kyushu.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4>Kyusyu</h4>
+                    <p class="card-text">Kyushu is made up of a complex system of volcanic ranges and has a subtropical
+                      climate in the south.Kyushu is easily accessible by land, sea, and air. Some say that Kyushu is
+                      worth visiting
+                      for an authentic Japanese experience and to learn more about the culture outside of the main
+                      touristy destinations.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2"
+              data-bs-slide="prev">
+              <span class="" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ff758f"
+                  class="bi bi-caret-left-square-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12" />
+                </svg>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2"
+              data-bs-slide="next">
+              <span class="" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ff758f"
+                  class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4z" />
+                </svg>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--end section-->
+
+  <section class="container-fluid py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-danger">Explore by Interest</h1>
+
+        </div>
+      </div>
+
+      <!--End section star section-->
+
+      <div class="row pt-5 ">
+
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="border p-3 text-center">
+            <img class="img-fluid" src="./second bar-history/history of japan.jpg" alt="food-culture">
+            <p class="py-1 fs-4 fw-bold">Japanese Culture and Traditions</p>
+            <p>Japanese people always display modesty and humility. People often bow to convey the message:
+              <b>“I am not above you. I respect you.”</b> Bowing longer with a higher degree of angle means more
+              respect.
+              Additionally, Japanese people have two religions at the same time: they are both Buddhist and
+              Shintoist. When a Japanese baby is born, the ceremony is held in the Shinto shrine and when
+              someone dies the ceremony takes place in a Buddhist temple.
+            </p>
+            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+              data-bs-target="#HistexampleModal">Get a Quote</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="border p-3 text-center">
+            <img class="img-fluid" src="./second bar-nature/japan nature.jpg" alt="food-culture">
+            <p class="py-1 fs-4 fw-bold">Japanese Nature</p>
+            <p>Japan's nature is diverse, with rugged mountains, rocky coastlines, white beaches, bamboo forests, and
+              waterfalls.
+              Japan nature is depending on which season you choose to visit, the natural backdrop will change
+              from the delicate pinks of cherry blossom season in spring, fresh greens of summer,
+              golden hues of autumn and mountains covered in powder snow in winter. Spend time
+              among the seasonal foliage in gardens and National Parks. </p>
+            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+              data-bs-target="#NatureexampleModal">Get a Quote</button>
+          </div>
+        </div>
+
+
+
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="border p-3 text-center">
+            <img class="img-fluid" src="./second bar-Food/Jap-foods.jpg" alt="food-culture">
+            <p class="py-1 fw-bold fs-4">Japanese Foods</p>
+            <p>The Japanese cuisine offers a great variety of dishes and regional specialties.
+              Some of the most popular Japanese dishes are listed below. They are categorized
+              below into rice dishes, seafood dishes, noodle dishes, hot pot dishes, meat dishes,
+              soybean dishes, yoshoku dishes and other dishes.</p>
+            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+              data-bs-target="#FoodexampleModal">Click to explore</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="border p-3 text-center">
+            <img class="img-fluid" src="./second bar-shopping/shopping japan.jpeg" alt="food-culture">
+            <p class="py-1 fw-bold fs-4">Shopping in japan</p>
+            <p>Japan is a shopping paradise with a wealth of stores selling everything from traditional
+              souvenirs and local food to the latest electronics and hottest fashion brands. Both domestic
+              and foreign brands are represented, as are stores for all budgets, from the 100 yen shops to
+              high-end fashion boutiques and department stores.</p>
+            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Click to explore</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="border p-3 text-center">
+            <img class="img-fluid" src="./japan-language.webp" alt="food-culture">
+            <p class="py-1 fw-bold fs-4">Basic Japanese Language</p>
+            <p>
+              Are you planning to travel to Japan for a holiday or a business trip? Or are you just
+              interested in Japanese culture? This article lists hundreds of essential, basic Japanese
+              words and phrases. This is an excellent place to start if you’re interested in learning
+              Japanese or taking Japanese language.Learn basic Japanese for all kinds of different situations in Japan.
+            </p>
+            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+              data-bs-target="#LangexampleModal">To Learn Japanese</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!--End of section-->
+
+
+  <!--Basic Info section-->
+  <section class="container-fluid py-5 basic-info-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-danger">Basic Information</h1>
+        </div>
+      </div>
+      <!--end of title section-->
+
+      <div class="row pt-5">
+        <div class="col-lg-12">
+
+          <div class="row">
+
+            <div class="col-md-3">
+              <div class="card border-0 mb-3 img-box">
+                <img src="./Visa-process.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="card-body text-center py-2">
+                <a href="" class="text-decoration-none">
+                  <p class="basic-info mb-3 fw-bold">Visa Process</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <div class="card border-0 mb-3 img-box">
+                <img src="./Tokyo-airport.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="card-body text-center py-2">
+                <a href="" class="text-decoration-none">
+                  <p class="basic-info mb-3 fw-bold">Airport Access</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <div class="card border-0 mb-3 img-box">
+                <img src="./Travel-partnar.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="card-body text-center py-2">
+                <a href="" class="text-decoration-none">
+                  <p class="basic-info mb-3 fw-bold">Tour Operators</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <div class="card border-0 mb-3 img-box">
+                <img src="./food.webp" alt="" class="img-fluid">
+              </div>
+              <div class="card-body text-center py-2">
+                <a href="" class="text-decoration-none">
+                  <p class="basic-info mb-3 fw-bold">Indian Restaurants</p>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End of section-->
+
+
+  <!--Popular places Section-->
+  <section class="container-fluid py-5">
+    <div class="container">
+      <h1 class="text-center text-danger ">Popular Places</h1>
+      <div class="container text-start">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row mb-3 py-3">
+
+          <div class="col-md-8">
+            <div class="card text-light  border-0 mb-3 img-box">
+              <img src="./TokyoCityscape.jpg" class="card-img img-fluid ">
+              <div class="card-img-overlay">
+                <p class="title fs-xs-3 ms-3">Tokyo City</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 ">
+            <div class="card text-light  border-0 img-box mb-3">
+              <img src="./hiroshima.jpg" class="card-img-fluid">
+              <div class="card-img-overlay">
+                <p class="title fs-sm-3 ms-1">Hiroshima</p>
+              </div>
+            </div>
+
+            <div class="card text-light  border-0 img-box mb-3">
+              <img src="./Red-Tori-Gate-at-Fushimi-Inari-Shrine-in-Kyoto-Japan.jpg" class="card-img-fluid">
+              <div class="card-img-overlay">
+                <p class="title fs-sm-3 ms-1">Kyoto</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row mb-3">
+          <div class="col-6 col-md-4">
+            <div class="card text-light  border-0 img-box mb-3">
+              <img src="./osaka-dotonbori-iStock-1138049211-1024x683.jpg" class="card-img-fluid">
+              <div class="card-img-overlay">
+                <p class="title fs-lg-3 ms-3">Osaka City</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card text-light  border-0 img-box mb-3">
+              <img src="./photo-1526481280693-3bfa7568e0f3.jpeg" class="card-img-fluid">
+              <div class="card-img-overlay">
+                <p class="title fs-sm-3 ms-3">Mountain Fuji</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card text-light  border-0 img-box mb-3">
+              <img src="./Nagasaki-Hero.jpg" class="card-img-fluid">
+              <div class="card-img-overlay">
+                <p class="title fs-sm-3 ms-3">Nagasaki</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <div class="card text-light  border-0 img-box mb-3">
+              <img src="./Shirakawa-go.jpg" class="card-img-fluid">
+              <div class="card-img-overlay">
+                <p class="title fs-sm-3 ms-3">Shirakawa-Go</p>
+              </div>
+            </div>
+
+            <div class="card text-light  border-0 img-box mb-3">
+              <img src="./Hakuba.jpg" class="card-img-fluid">
+              <div class="card-img-overlay">
+                <p class="title fs-sm-3 ms-3">Hakuba</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-8">
+            <div class="card text-light  border-0 img-box mb-2">
+              <img src="./Hirosaki castle.jpg" class="card-img-fluid">
+              <div class="card-img-overlay">
+                <p class="title fs-sm-3 ms-3">Hirosaki</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--End of section-->
+
+
+
+
+
+  <!--FAQ SECTION-->
+  <section class="container-fluid py-5" id="faq">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 text-center">
+          <h1 class="text-danger">Japan Travel FAQ</h1>
+          <p>In our Japan Travel FAQ, you’ll find answers to the most common questions we get<br>
+            from people about visiting Japan, whether you’re a first-time traveler or repeat visitor.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+          </svg>
+        </div>
+      </div>
+      <!--end-->
+
+      <div class="row py-5">
+        <div class="col-12 col-lg-6 mb-3">
+          <div class="accordion" id="accordion_1">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading_1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1"
+                  aria-expanded="true" aria-controls="collapse_1">
+                  Is Japan a good honeymoon destination?
+                </button>
+              </h2>
+              <div id="collapse_1" class="accordion-collapse collapse show" aria-labelledby="heading_1"
+                data-bs-parent="#accordion_1">
+                <div class="accordion-body">
+                  Yes! Whether you dream of ocean views, mountainous landscapes, impeccable gardens,
+                  or glittering skylines, Japan has everything the newly-married couple could ever desire for an
+                  adventurous getaway.<br><br>
+                  Japan wasn’t always popular with honeymooners, but over the past few years we’ve had the pleasure of
+                  helping food-loving couples from around the world plan mouthwatering foodie honeymoons throughout
+                  Japan.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading_2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+                  How to Get a Japan Tourist Visa?
+                </button>
+              </h2>
+              <div id="collapse_2" class="accordion-collapse collapse" aria-labelledby="heading_2"
+                data-bs-parent="#accordion_1">
+                <div class="accordion-body">
+                  You have to apply for a Japan Tourist Visa from a Representative Office of
+                  Japan abroad (Embassy or Consulate) or through an accredited travel agency.
+                  The process for a Japan Tourist Visa application can be summed up as follows:<br>
+                  <code>1</code>.Contact the Japanese Embassy/Consulate to make an appointment for the submission of the
+                  application.
+                  Some Japanese Embassies do not accept individual applications, however, so you have to apply through a
+                  travel agency. The agency will submit the application at the Embassy or Consulate on your behalf.<br>
+                  <code>2</code>.Gather the required documents for a Japan visa (see them below)<br>
+                  <code>3</code>.Submit the documents at the Embassy/Consulate or the travel agency.<br>
+                  <code>4</code>.Wait for the visa to be processed. This will usually take 5 working days, starting from
+                  the day
+                  the Japanese Representative Office receives your completed application.<br>
+                  <code>5</code>.Collect your passport Embassy/Consulate/travel agency. If the application has been
+                  approved, your
+                  visa will be affixed and you can use it to travel to Japan within three months.
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading_3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+                  What are some other interesting places to visit?
+                </button>
+              </h2>
+              <div id="collapse_3" class="accordion-collapse collapse" aria-labelledby="heading_3"
+                data-bs-parent="#accordion_1">
+                <div class="accordion-body">
+                  <code>Osaka</code> is a cosmopolitan city near the ancient capital, Kyoto, best known for
+                  its dynamic food and drinking culture, and famously outgoing people.<br>
+                  <code>kanazawa</code> a charming city located on the Japan Sea coast, is famous for its well-preserved
+                  historical
+                  districts, Kenrokuen Garden, its fresh and delicious seafood, and the 21st Century Museum of
+                  Contemporary Art.<br>
+                  <code>Mount Koya</code> The small mountaintop Buddhist community of Mount Koya is one of Japan’s most
+                  magical destinations,
+                  and the perfect place to spend a night at a Buddhist temple in shukubo temple lodgings.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of part-1-->
+
+        <div class="col-12 col-lg-6">
+          <div class="accordion" id="accordion_2">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading_4">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_4"
+                  aria-expanded="true" aria-controls="collapse_4">
+                  I want to postpone my travel. Until when is my visa valid?
+                </button>
+              </h2>
+              <div id="collapse_4" class="accordion-collapse collapse show" aria-labelledby="heading_4"
+                data-bs-parent="#accordion_2">
+                <div class="accordion-body">
+                  The period of validity of a single-entry visa (that becomes invalid as soon as once
+                  you enter Japan) is basically three months. Enter Japan within three months of the issuance
+                  of the visa. If you wish to postpone your travel for longer than three months, you will be
+                  required to make another visa application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading_5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                  Is Japan good for kids and families?
+                </button>
+              </h2>
+              <div id="collapse_5" class="accordion-collapse collapse" aria-labelledby="heading_5"
+                data-bs-parent="#accordion_2">
+                <div class="accordion-body">
+                  Yes. Japan is fun, fascinating, and safe, making it one of the world’s best destinations for family
+                  travel.<br>
+                  Whether you’re traveling with young children or teenagers (or both!), Japan’s dynamic and eclectic
+                  culture has something for everybody.<br>
+                  On top of all this, Japanese people cater extremely well to children and love family travelers.<br>
+                  Why do kids love Japan so much? See our full article, Is Japan a Good Destination for a Family
+                  Holiday?
+                  (It also features a handy list of 25 family-friendly activities in Japan!)
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading_6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse_6" aria-expanded="false" aria-controls="collapse_6">
+                  I have lost my passport with the visa in it. What should I do?
+                </button>
+              </h2>
+              <div id="collapse_6" class="accordion-collapse collapse" aria-labelledby="heading_6"
+                data-bs-parent="#accordion_2">
+                <div class="accordion-body">
+                  Contact the <code>Japanese Embassy / Consulate General</code> that issued the visa to inform what
+                  happened. Also, it is recommended that you submit a lost property form to the local
+                  police station. If you need a new visa, you must make an application again.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--End of section-->
+
+  <!--footer section-->
+  <footer class="container-fluid bg-dark py-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="#top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-arrow-up-circle-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="col-12 col-lg-2 offset-lg-5 mt-3">
+        <form action="">
+          <div class="input-group mb-3">
+            <input required type="text" class="form-control" placeholder="Recipient's username"
+              aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-12 text-center pt-3">
+        <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none px-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/accounts/login/" target="_blank" class="text-decoration-none px-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" class="text-decoration-none px-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-youtube"
+            viewBox="0 0 16 16">
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+          </svg>
+        </a>
+        <a href="https://web.whatsapp.com/" target="_blank" class="text-decoration-none px-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-whatsapp"
+            viewBox="0 0 16 16">
+            <path
+              d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="col-12 text-center mt-4">
+        <p class="text-secondary">CopyRight &copy; Balaji P</p>
+      </div>
+
+    </div>
+  </footer>
+  <!--footer section ends-->
+
+
+
+
+
+
+
+
+
+
+  <!-- food Modal -->
+  <div class="modal fade" id="FoodexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-title fw-bold fs-5 text-danger" id="exampleModalLabel">Japanese Foods</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./second bar-Food/sushi.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="food-class text-light fw-bold">Sushi (すし)</h5>
+                  <p class="food-class text-light fw-bold">vinegared rice, sugar, salt, and other ingredients, such as
+                    vegetables or meat</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./second bar-Food//Ramen.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="food-class text-light fw-bold">Ramen (ラーメン)</h5>
+                  <p class="food-class text-light fw-bold">Ramen noodle dish made with Common flavors include soy sauce
+                    and miso,
+                    and toppings may include sliced meat, nori, menma, and scallions. </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./second bar-Food//Jap-curry.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="food-class text-light fw-bold">Curry (カレー)</h5>
+                  <p class="food-class text-light fw-bold">Along with the sauce, a wide variety of vegetables and meats
+                    are used to make Japanese curry.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./second bar-Food//Tempura.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="food-class text-light fw-bold">Tempura (天ぷら)</h5>
+                  <p class="food-class text-light fw-bold">Tempura dish of seafood or vegetables coated in batter and
+                    deep-fried.The batter
+                    is usually made with flour, egg, and cold water.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
+              <span class="" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red"
+                  class="bi bi-caret-left-square-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12" />
+                </svg>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
+              <span class="" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red"
+                  class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4z" />
+                </svg>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--Food model ends-->
+
+  <!--Shopping Model-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold text-danger" id="exampleModalLabel">Top Shopping Places in Japan</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./second bar-shopping/ameyoku shop.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="shop-class fw-bold">Ameyoku Shooping Street</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./second bar-shopping/Nikishi-market.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="shop-class fw-bold">Nishiki Market</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./second bar-shopping/Harajuku.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="shop-class fw-bold">Harajuku</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./second bar-shopping/Roppongi.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="shop-class fw-bold">Roppongi</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./second bar-shopping/shisaibashi.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="shop-class fw-bold">Shinsaibashi-Suji</h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red"
+                  class="bi bi-caret-left-square-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12" />
+                </svg>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red"
+                  class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4z" />
+                </svg>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--Shopping Model ends-->
+
+  <!--Language model-->
+  <div class="modal fade" id="LangexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold text-danger" id="exampleModalLabel">Basic Words in Japanese</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <p class="fw-bold text-danger"> Hello - Konnichiwa (こんにちは) <br><span class="text-muted ">--Pronunciation:
+                kohn-nee-chee-wah</span></p>
+            <p class="fw-bold text-danger">Thank you - Arigatou Gozaimasu (ありがとうございます) <br><span
+                class="text-muted">--Pronunciation: ah-ree-gah-toh goh-zah-ee-mahs </span> </p>
+            <p class="fw-bold text-danger">Please - kudasai (ください) <br><span class="text-muted">--Pronunciation:
+                koo-dah-sigh </span></p>
+            <p class="fw-bold text-danger">Yes - Hai (はい) <br><span class="text-muted">--Pronunciation: hi </span></p>
+            <p class="fw-bold text-danger"> No - Īe (いいえ) <br><span class="text-muted">--Pronunciation: ee-eh </span>
+            </p>
+            <p class="fw-bold text-danger">Nice to meet you - Hajimemashite (はじめまして) <br><span
+                class="text-muted">--Pronunciation: hah-jee-meh-mah-shee-teh </span></p>
+            <p class="fw-bold text-danger">Goodbye - Sayōnara (さようなら)<br><span class="text-muted">--Pronunciation:
+                sah-yoh-nah-rah </span> </p>
+            <p class="fw-bold text-danger">Excuse me/ I'm sorry - Sumimasen (すみません) <br><span
+                class="text-muted">--Pronunciation: soo-mee-mah-sen </span></p>
+            <p class="fw-bold text-danger">Delicious - Oishii (美味しい) <br><span class="text-muted">--Pronunciation:
+                oh-ee-shee </span></p>
+            <p class="fw-bold text-danger">Help! - Tasukete! (助けて！) <br><span class="text-muted">--Pronunciation:
+                tah-soo-keh-teh! </span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Language model ends-->
+
+  <!--Nature model-->
+  <div class="modal fade" id="NatureexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold text-danger" id="exampleModalLabel">Japanese Nature</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container text-center">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class="row">
+              <div class=" col-md-6">
+                <div class="card text-light  border-0 mb-3 img-box">
+                  <img src="./second bar-nature/jerry blossom.jpg" class="card-img img-fluid ">
+                  <div class="card-img-overlay">
+                    <p class="title fs-xs-3">Cherry Blossom</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-6">
+                <div class="card text-light  border-0 mb-3 img-box">
+                  <img src="./second bar-nature/autumn leaves.jpg" class="card-img img-fluid ">
+                  <div class="card-img-overlay">
+                    <p class="title fs-xs-3">Autumn Leaves</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <div class="card text-light  border-0 mb-3 img-box">
+                  <img src="./second bar-nature/gorge.jpg" class="card-img img-fluid ">
+                  <div class="card-img-overlay">
+                    <p class="">Gorge</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="card text-light  border-0 mb-3 img-box">
+                  <img src="./second bar-nature/volcano.webp" class="card-img img-fluid ">
+                  <div class="card-img-overlay">
+                    <p class="">Volcano</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="card text-light  border-0 mb-3 img-box">
+                  <img src="./second bar-nature/caves.jpg" class="card-img img-fluid ">
+                  <div class="card-img-overlay">
+                    <p class="">Caves</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Columns are always 50% wide, on mobile and desktop -->
+            <div class="row">
+              <div class=" col-md-6">
+                <div class="card text-light  border-0 mb-3 img-box">
+                  <img src="./second bar-nature/drift ice.jpg" class="card-img img-fluid ">
+                  <div class="card-img-overlay">
+                    <p class="title fs-xs-3">Ryuhyu Drift Ice</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" col-md-6">
+                <div class="card text-light  border-0 mb-3 img-box">
+                  <img src="./second bar-nature/blue pond.jpg" class="card-img img-fluid ">
+                  <div class="card-img-overlay">
+                    <p class="title fs-xs-3">Blue Pond</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Nature model Ends-->
+
+  <!--Culture model-->
+  <div class="modal fade" id="HistexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold text-danger" id="exampleModalLabel">Basic Japanese Traditions</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Taking off shoes when entering someone’s house.</p>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Wearing a mask when sick.</p>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Not shaking hands and not hugging when meeting with loved
+              ones.</p>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Bowing 45 degrees to show respect.</p>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Making the slurping sound when eating noodles.</p>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Symbolically washing hands when entering a shrine.</p>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Wearing slippers when using the restroom.</p>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Decorate one’s house with dolls for the annual “girls day”
+              and decorate the house with the samurai figure for the annual “boys day”.</p>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Throwing beans at people who dressed as demons during the
+              “setsubun” festival.</p>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Eating a special meal called “osechi” during the new year’s
+              day.</p>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Bathing in the evening rather than in the morning.</p>
+            <p class="fw-bold "><span class="fs-4">🏯</span>Participating in the firework festivals or bon odori
+              festivals during the summer by wearing a yukata.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Culture model ends-->
+
+</body>
+
+</html>
